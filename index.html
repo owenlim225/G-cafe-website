@@ -190,27 +190,29 @@
         </div>
         <!-- About End -->
 
-        <!-- Menu Section -->
+        <!-- COFFEE SECTION -->
         <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
             <div class="container">
-                <div class="text-center">
-                    <h5 class="section-title text-primary fw-normal">Menu</h5>
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Popular</h5>
+                    <h1 class="mb-5">Drinks</h1>
                 </div>
+
                 <div class="row">
                     <!-- Left Panel: Categories -->
                     <div class="col-md-4">
-                        <ul id="category-list" class="list-group"></ul>
+                        <ul class="list-group" id="category-list"></ul>
                     </div>
                     <!-- Right Panel: Carousel -->
-                    <div class="col-md-8 d-flex justify-content-center">
+                    <div class="col-md-8">
                         <div id="menu-carousel" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner" id="menu-container"></div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#menu-carousel" data-bs-slide="prev">
+                            <a class="carousel-control-prev" href="#menu-carousel" role="button" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#menu-carousel" data-bs-slide="next">
+                            </a>
+                            <a class="carousel-control-next" href="#menu-carousel" role="button" data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -908,60 +910,23 @@
         });
 
         function displayMenu(items) {
-            const fragment = document.createDocumentFragment();
+            menuContainer.innerHTML = "";
             items.forEach((item, index) => {
-                const carouselItem = document.createElement('div');
-                carouselItem.className = `carousel-item ${index === 0 ? 'active' : ''}`;
-                
-                const card = document.createElement('div');
-                card.className = 'card';
-                card.style.width = '100%';
-                
-                const img = document.createElement('img');
-                img.className = 'card-img-top';
-                img.src = item.image;
-                img.alt = item.name;
-                img.style.width = '100%';
-                img.style.height = 'auto';
-                
-                const cardBody = document.createElement('div');
-                cardBody.className = 'card-body text-center';
-                
-                const cardTitle = document.createElement('h5');
-                cardTitle.className = 'card-title';
-                cardTitle.textContent = item.name;
-                
-                const table = document.createElement('table');
-                table.className = 'table table-borderless text-center';
-                
-                const tr1 = document.createElement('tr');
-                ['12oz', '16oz', '22oz'].forEach(size => {
-                    const td = document.createElement('td');
-                    td.textContent = size;
-                    tr1.appendChild(td);
-                });
-                
-                const tr2 = document.createElement('tr');
-                item.prices.forEach(price => {
-                    const td = document.createElement('td');
-                    td.textContent = price;
-                    tr2.appendChild(td);
-                });
-                
-                table.appendChild(tr1);
-                table.appendChild(tr2);
-                
-                cardBody.appendChild(cardTitle);
-                cardBody.appendChild(table);
-                
-                card.appendChild(img);
-                card.appendChild(cardBody);
-                
-                carouselItem.appendChild(card);
-                fragment.appendChild(carouselItem);
+                let activeClass = index === 0 ? "active" : "";
+                menuContainer.innerHTML += `
+                    <div class='carousel-item ${activeClass}'>
+                        <div class='card'>
+                            <img class='card-img-top' src='${item.image}' alt='${item.name}'>
+                            <div class='card-body text-center'>
+                                <h5 class='card-title'>${item.name}</h5>
+                                <table class='table table-borderless text-center'>
+                                    <tr><td>12oz</td><td>16oz</td><td>22oz</td></tr>
+                                    <tr><td>${item.prices[0]}</td><td>${item.prices[1]}</td><td>${item.prices[2]}</td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>`;
             });
-            menuContainer.innerHTML = '';
-            menuContainer.appendChild(fragment);
         }
 </script>
         
