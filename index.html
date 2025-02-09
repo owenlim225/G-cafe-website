@@ -190,6 +190,34 @@
         </div>
         <!-- About End -->
 
+        <!-- COFFEE SECTION -->
+        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Popular</h5>
+                    <h1 class="mb-5">Drinks</h1>
+                </div>
+
+                <div class="row">
+                    <!-- Left Panel: Categories -->
+                    <div class="col-md-4">
+                        <ul class="list-group" id="category-list"></ul>
+                    </div>
+                    <!-- Right Panel: Carousel -->
+                    <div class="col-md-8 d-flex justify-content-center">
+                        <div id="menu-carousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner" id="menu-container"></div>
+                            <a class="carousel-control-prev" href="#menu-carousel" role="button" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#menu-carousel" role="button" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Menu Start -->
         <div class="container-xxl py-5">
@@ -199,22 +227,13 @@
                     <h1 class="mb-5">Most Popular Items</h1>
                 </div>
                 <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
-                        <li class="nav-item">
-                            <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
-                                <i class="fa fa-coffee fa-2x text-primary"></i>
-                                <div class="ps-3">
-                                    <small class="text-body">Popular</small>
-                                    <h6 class="mt-n1 mb-0">Breakfast</h6>
-                                </div>
-                            </a>
-                        </li>
+                    <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">     
                         <li class="nav-item">
                             <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
                                 <i class="fa fa-hamburger fa-2x text-primary"></i>
                                 <div class="ps-3">
-                                    <small class="text-body">Special</small>
-                                    <h6 class="mt-n1 mb-0">Launch</h6>
+                                    <small class="text-body">Pastries &</small>
+                                    <h6 class="mt-n1 mb-0">Pasta</h6>
                                 </div>
                             </a>
                         </li>
@@ -222,24 +241,27 @@
                             <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
                                 <i class="fa fa-utensils fa-2x text-primary"></i>
                                 <div class="ps-3">
-                                    <small class="text-body">Lovely</small>
-                                    <h6 class="mt-n1 mb-0">Dinner</h6>
+                                    <small class="text-body">Extra &</small>
+                                    <h6 class="mt-n1 mb-0">Add ons</h6>
                                 </div>
                             </a>
                         </li>
                     </ul>
                     <div class="tab-content">
-                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                        <!-- tab-2 -->
+                        <div id="tab-2" class="tab-pane fade show p-0 active">
                             <div class="row g-4">
+                                <!--PASTRIES-->
+                                <h3>PASTRIES</h3>
                                 <div class="col-lg-6">
                                     <div class="d-flex align-items-center">
                                         <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Blueberry Cheesecake</span>
+                                                <span class="text-primary">₱160 / slice</span>
                                             </h5>
-                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            <small class="fst-italic">A creamy cheesecake topped with a luscious blueberry compote.</small>
                                         </div>
                                     </div>
                                 </div>
@@ -248,10 +270,10 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="img/menu-2.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Red Velvet</span>
+                                                <span class="text-primary">₱160 / slice</span>
                                             </h5>
-                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            <small class="fst-italic">A moist and velvety cake with a hint of cocoa, layered with rich cream cheese frosting.</small>
                                         </div>
                                     </div>
                                 </div>
@@ -260,10 +282,10 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="img/menu-3.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Chocolate Truffle</span>
+                                                <span class="text-primary">₱200 / slice</span>
                                             </h5>
-                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            <small class="fst-italic">Decadent chocolate cake filled with smooth chocolate ganache.</small>
                                         </div>
                                     </div>
                                 </div>
@@ -272,22 +294,23 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="img/menu-4.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Pistachio Sansrival</span>
+                                                <span class="text-primary">₱200 / slice</span>
                                             </h5>
-                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            <small class="fst-italic">Crunchy layers of meringue with a creamy pistachio buttercream.</small>
                                         </div>
                                     </div>
                                 </div>
+                        
                                 <div class="col-lg-6">
                                     <div class="d-flex align-items-center">
                                         <img class="flex-shrink-0 img-fluid rounded" src="img/menu-5.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Walnut Brownies</span>
+                                                <span class="text-primary">₱65 / piece</span>
                                             </h5>
-                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            <small class="fst-italic">Rich and fudgy brownies loaded with crunchy walnuts.</small>
                                         </div>
                                     </div>
                                 </div>
@@ -296,10 +319,10 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="img/menu-6.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Cream Puffs</span>
+                                                <span class="text-primary">₱75 / piece</span>
                                             </h5>
-                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            <small class="fst-italic">Light and airy puffs filled with creamy custard.</small>
                                         </div>
                                     </div>
                                 </div>
@@ -308,10 +331,10 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="img/menu-7.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Walnut Cookies</span>
+                                                <span class="text-primary">₱65 / piece</span>
                                             </h5>
-                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            <small class="fst-italic">Crispy cookies with a delightful walnut crunch.</small>
                                         </div>
                                     </div>
                                 </div>
@@ -320,210 +343,213 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="img/menu-8.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Empanada</span>
+                                                <span class="text-primary">₱75 / piece</span>
                                             </h5>
-                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            <small class="fst-italic">Savory pastry filled with a delicious meat or vegetable filling.</small>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div id="tab-2" class="tab-pane fade show p-0">
-                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-8.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Kouign Amann</span>
+                                                <span class="text-primary">₱85 / piece</span>
+                                            </h5>
+                                            <small class="fst-italic">A buttery, flaky pastry with a caramelized crust.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-8.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Ham and Cheese</span>
+                                                <span class="text-primary">₱115 / piece</span>
+                                            </h5>
+                                            <small class="fst-italic">A classic combination of ham and melted cheese in a soft bun.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-8.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Cinnamon Roll</span>
+                                                <span class="text-primary">₱85 / piece</span>
+                                            </h5>
+                                            <small class="fst-italic">Soft and gooey rolls with a sweet cinnamon filling.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-8.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Asado Bun</span>
+                                                <span class="text-primary">₱20 / piece</span>
+                                            </h5>
+                                            <small class="fst-italic">Fluffy bun filled with savory asado meat.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-8.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Blueberry Danish</span>
+                                                <span class="text-primary">₱150 / piece</span>
+                                            </h5>
+                                            <small class="fst-italic">A flaky pastry topped with sweet blueberries.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                                <!--PASTA-->
+                                <h3>PASTA</h3>
                                 <div class="col-lg-6">
                                     <div class="d-flex align-items-center">
                                         <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Baked Mac</span>
+                                                <span class="text-primary">₱180</span>
                                             </h5>
-                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            <small class="fst-italic">A comforting dish of macaroni pasta baked in a creamy cheese sauce.</small>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-2.jpg" alt="" style="width: 80px;">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Lasagna</span>
+                                                <span class="text-primary">₱200</span>
                                             </h5>
-                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            <small class="fst-italic">Layers of pasta, rich meat sauce, and creamy cheese, baked to perfection.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                                <!--PICA PICA-->
+                                <h3>PICA PICA</h3>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>French Fries</span>
+                                                <span class="text-primary">₱129</span>
+                                            </h5>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-3.jpg" alt="" style="width: 80px;">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Chicken Nuggets</span>
+                                                <span class="text-primary">₱139</span>
                                             </h5>
-                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                            
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-4.jpg" alt="" style="width: 80px;">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
-                                            </h5>
-                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-5.jpg" alt="" style="width: 80px;">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
-                                            </h5>
-                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-6.jpg" alt="" style="width: 80px;">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
-                                            </h5>
-                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-7.jpg" alt="" style="width: 80px;">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
-                                            </h5>
-                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-8.jpg" alt="" style="width: 80px;">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
-                                            </h5>
-                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
-                                        </div>
-                                    </div>
-                                </div>
+                                <br>
+                                <br>
                             </div>
                         </div>
+                        
+
+                        <!-- tab-3 -->
                         <div id="tab-3" class="tab-pane fade show p-0">
                             <div class="row g-4">
+                                <!--Extra & Add Ons-->
+                                <h3>EXTRA & ADD ONS</h3>
                                 <div class="col-lg-6">
                                     <div class="d-flex align-items-center">
                                         <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Espresso</span>
+                                                <span class="text-primary">₱30 / shots</span>
                                             </h5>
-                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-2.jpg" alt="" style="width: 80px;">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Hazelnut</span>
+                                                <span class="text-primary">₱20 / pump</span>
                                             </h5>
-                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-3.jpg" alt="" style="width: 80px;">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Macadamia</span>
+                                                <span class="text-primary">₱20 / pump</span>
                                             </h5>
-                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-4.jpg" alt="" style="width: 80px;">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Vanilla</span>
+                                                <span class="text-primary">₱20 / pump</span>
                                             </h5>
-                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-5.jpg" alt="" style="width: 80px;">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Toffee Nut</span>
+                                                <span class="text-primary">₱20 / pump</span>
                                             </h5>
-                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-6.jpg" alt="" style="width: 80px;">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
-                                            </h5>
-                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
+                                                <span>Caramel</span>
+                                                <span class="text-primary">₱20 / pump</span>
+                                            </h5>                 
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-7.jpg" alt="" style="width: 80px;">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
+                                                <span>Whipped Cream</span>
+                                                <span class="text-primary">₱20 / pump</span>
                                             </h5>
-                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-8.jpg" alt="" style="width: 80px;">
-                                        <div class="w-100 d-flex flex-column text-start ps-4">
-                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>Chicken Burger</span>
-                                                <span class="text-primary">$115</span>
-                                            </h5>
-                                            <small class="fst-italic">Ipsum ipsum clita erat amet dolor justo diam</small>
                                         </div>
                                     </div>
                                 </div>
@@ -644,7 +670,7 @@
                                 <img class="img-fluid" src="img/team-2.jpg" alt="">
                             </div>
                             <h5 class="mb-0">Sherwin P. Limosnero</h5>
-                            <small>Cook</small>
+                            <small>Lead Developer</small>
                             <div class="d-flex justify-content-center mt-3">
                                 <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
@@ -813,6 +839,98 @@
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
 
+    <script>
+        const menuData = [
+            { category: "HOT COFFEE", items: [
+                { name: "Americano", image: "img/menu-3.jpg", prices: ["₱100", "-", "-"] },
+                { name: "Brewed Coffee", image: "img/menu-4.jpg", prices: ["₱100", "-", "-"] },
+                { name: "Cappuccino", image: "img/menu-5.jpg", prices: ["₱115", "-", "-"] },
+                { name: "Latte", image: "img/menu-6.jpg", prices: ["₱115", "-", "-"] },
+                { name: "Spanish Latte", image: "img/menu-7.jpg", prices: ["₱130", "-", "-"] },
+                { name: "Caramel Macchiato", image: "img/menu-8.jpg", prices: ["₱140", "-", "-"] }
+            ]},
+            { category: "LATTE", items: [
+                { name: "Salted Caramel Latte", image: "img/menu-9.jpg", prices: ["₱140", "-", "-"] },
+                { name: "White Mocha Latte", image: "img/menu-10.jpg", prices: ["₱140", "-", "-"] },
+                { name: "Mocha Latte", image: "img/menu-11.jpg", prices: ["₱140", "-", "-"] },
+                { name: "Butterscotch Latte", image: "img/menu-12.jpg", prices: ["₱140", "-", "-"] },
+                { name: "Hazelnut Latte", image: "img/menu-13.jpg", prices: ["₱135", "-", "-"] },
+                { name: "Vanilla Latte", image: "img/menu-14.jpg", prices: ["₱135", "-", "-"] }
+            ]},
+            { category: "ICED COFFEE", items: [
+                { name: "Iced Americano", image: "img/menu-15.jpg", prices: ["₱120", "₱135", "-"] },
+                { name: "Iced Brewed Coffee", image: "img/menu-16.jpg", prices: ["₱120", "₱135", "-"] },
+                { name: "Iced Classic Latte", image: "img/menu-17.jpg", prices: ["₱110", "₱145", "-"] },
+                { name: "Iced Spanish Latte", image: "img/menu-18.jpg", prices: ["₱160", "₱165", "-"] },
+                { name: "Iced Caramel Macchiato", image: "img/menu-19.jpg", prices: ["₱160", "₱165", "-"] },
+                { name: "Iced Salted Caramel", image: "img/menu-20.jpg", prices: ["₱160", "₱180", "-"] },
+                { name: "Iced White Mocha", image: "img/menu-21.jpg", prices: ["₱160", "₱180", "-"] },
+                { name: "Iced Mocha Latte", image: "img/menu-22.jpg", prices: ["₱160", "₱180", "-"] },
+                { name: "Iced Butterscotch Latte", image: "img/menu-23.jpg", prices: ["₱160", "₱180", "-"] },
+                { name: "Iced Macadamia Latte", image: "img/menu-24.jpg", prices: ["₱160", "₱180", "-"] },
+                { name: "Iced Hazelnut Latte", image: "img/menu-25.jpg", prices: ["₱160", "₱180", "-"] },
+                { name: "Iced Vanilla Latte", image: "img/menu-26.jpg", prices: ["₱140", "₱160", "-"] }
+            ]},
+            { category: "HOT NON COFFEE", items: [
+                { name: "Melted Chocolate", image: "img/menu-27.jpg", prices: ["₱120", "-", "-"] },
+                { name: "Classic Chocolate", image: "img/menu-28.jpg", prices: ["₱130", "-", "-"] },
+                { name: "Classic Matcha Latte", image: "img/menu-29.jpg", prices: ["₱120", "-", "-"] },
+                { name: "Hazelnut Matcha Latte", image: "img/menu-30.jpg", prices: ["₱120", "-", "-"] },
+                { name: "Honey Lemon", image: "img/menu-31.jpg", prices: ["₱70", "-", "-"] },
+                { name: "Green Tea", image: "img/menu-32.jpg", prices: ["₱70", "-", "-"] },
+                { name: "Chamomile Tea", image: "img/menu-33.jpg", prices: ["₱90", "-", "-"] }
+            ]},
+            { category: "BLENDED FRAPPE", items: [
+                { name: "Mocha Frappuccino", image: "img/menu-34.jpg", prices: ["-", "₱160", "₱185"] },
+                { name: "Cookie Crumble Frappe", image: "img/menu-35.jpg", prices: ["-", "₱160", "₱185"] },
+                { name: "White Chocolate Crème", image: "img/menu-36.jpg", prices: ["-", "₱160", "₱185"] },
+                { name: "Salted Caramel", image: "img/menu-37.jpg", prices: ["-", "₱160", "₱185"] },
+                { name: "Caramel Crunch", image: "img/menu-38.jpg", prices: ["-", "₱160", "₱185"] },
+                { name: "Cafe Vanilla", image: "img/menu-39.jpg", prices: ["-", "₱160", "₱175"] },
+                { name: "Classic Java Chip Frappe", image: "img/menu-40.jpg", prices: ["-", "₱160", "₱185"] },
+                { name: "Chocolate Cookie Crumble", image: "img/menu-41.jpg", prices: ["-", "₱160", "₱185"] },
+                { name: "Strawberry", image: "img/menu-42.jpg", prices: ["-", "₱160", "₱185"] },
+                { name: "Matcha Crème", image: "img/menu-43.jpg", prices: ["-", "₱160", "₱185"] },
+                { name: "Classic Vanilla Bean", image: "img/menu-44.jpg", prices: ["-", "₱160", "₱185"] },
+                { name: "Oreo Butterscotch", image: "img/menu-45.jpg", prices: ["-", "₱160", "₱185"] }
+            ]}
+        ];
+        
+        const categoryList = document.getElementById("category-list");
+        const menuContainer = document.getElementById("menu-container");
+
+        menuData.forEach((section, index) => {
+            let categoryItem = document.createElement("li");
+            categoryItem.classList.add("list-group-item", "category-item");
+            categoryItem.textContent = section.category;
+            categoryItem.addEventListener("click", () => displayMenu(section.items));
+            categoryList.appendChild(categoryItem);
+
+            if (index === 0) displayMenu(section.items); // Show first category by default
+        });
+
+        function displayMenu(items) {
+            menuContainer.innerHTML = "";
+            items.forEach((item, index) => {
+                let activeClass = index === 0 ? "active" : "";
+                menuContainer.innerHTML += `
+                    <div class='carousel-item ${activeClass}'>
+                        <div class='card' style='width: 100%;'>
+                            <img class='card-img-top' src='${item.image}' alt='${item.name}' style='width: 100%; height: auto;'>
+                            <div class='card-body text-center'>
+                                <h5 class='card-title'>${item.name}</h5>
+                                <table class='table table-borderless text-center'>
+                                    <tr><td>12oz</td><td>16oz</td><td>22oz</td></tr>
+                                    <tr><td>${item.prices[0]}</td><td>${item.prices[1]}</td><td>${item.prices[2]}</td></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>`;
+            });
+        }
+</script>
+        
+
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -825,6 +943,8 @@
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
+
+    
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
